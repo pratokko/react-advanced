@@ -1,22 +1,28 @@
 import { useState } from "react";
-import StateFunction from "./components/StateFunction";
+import BasicConditions from "./components/BasicConditions";
+import BasicEffect from "./components/BasicEffect";
+import Conditions from "./components/Conditions";
+// import StillEffect from "./components/StillEffect";
+// import Toggle from "./components/Toggle";
+// import FetchEffect from "./components/FetchEffect";
+// import StateFunction from "./components/StateFunction";
 // import StateObject from "./components/StateObject";
 // import StateArray from "./components/StateArray";
 
 function App() {
-  const [count, setCount] = useState(0);
-  console.log(useState());
+  // console.log(useState());
 
   return (
     <>
-      <h1>{count}</h1>
-
-      <button onClick={() => setCount((prevCount) => prevCount + 1)} className='btn'>
-        add
-      </button>
       {/* <StateArray /> */}
       {/* <StateObject /> */}
-      <StateFunction />
+      {/* <StateFunction /> */}
+      {/* <BasicEffect /> */}
+      {/* <FetchEffect /> */}
+      {/* <Toggle /> */}
+      {/* <BasicConditions /> */}
+      {/* <StillEffect /> */}
+      <Conditions />
     </>
   );
 }
