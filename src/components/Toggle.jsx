@@ -1,19 +1,18 @@
-import { useEffect, useState } from "react";
-import FetchEffect from './FetchEffect'
+import Mouseover from "./Mouseover";
+import { useState } from "react";
+
 const Toggle = () => {
+  const [toggle, setToggle] = useState(false);
 
-    const [toggle, setToggle] = useState(true)
-
-    const toggleBtn = () => {
-        setToggle(prevState => !prevState)
-    }
-
+  const toggleM = () => {
+    setToggle((prevState) => !prevState);
+  };
 
   return (
     <div>
-       {toggle && <FetchEffect />}
-        <button onClick={toggleBtn} className='btn'>toggle</button>
+      {toggle && <Mouseover />}
+      <button onClick={toggleM}>toggle</button>
     </div>
-  )
-}
-export default Toggle
+  );
+};
+export default Toggle;
